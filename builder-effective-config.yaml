@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.relaxai.desktop
+productName: Relax AI
+mac:
+  target: dmg
+  category: public.app-category.productivity
+win:
+  target: nsis
+files: []
+electronVersion: 39.2.7
