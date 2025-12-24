@@ -1,0 +1,15 @@
+:root {
+  --color-primary: #00FF41;
+  --color-bg: #0D0208;
+  --color-surface: #1A1A1A;
+  --color-text: #00FF41;
+  --color-border: #003B00;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
