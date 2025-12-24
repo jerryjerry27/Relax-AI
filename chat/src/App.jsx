@@ -76,7 +76,6 @@ function App() {
         baseUrl: 'https://ark.cn-beijing.volces.com/api/v3',
         model: '' // User needs to input their Endpoint ID
       });
-      alert('请在 Model Name 中填入您在火山引擎创建的【推理接入点 ID】(例如 ep-20240604...)\n\nPlease enter your Endpoint ID in Model Name field.');
     } else if (preset === 'deepseek') {
       setConfig({
         ...config,
