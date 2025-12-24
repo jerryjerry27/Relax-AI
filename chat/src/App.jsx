@@ -164,7 +164,16 @@ function App() {
         </div>
         <div className="menu-item active">Recent</div>
         <div className="menu-item">Relax Xingye</div>
-        <div className="menu-item" onClick={() => setShowSettings(true)}>Settings</div>
+        <div 
+          className="menu-item" 
+          onClick={() => {
+            console.log('Settings clicked');
+            setShowSettings(true);
+          }}
+          style={{marginTop: 'auto'}}
+        >
+          Settings
+        </div>
       </div>
 
       {/* Main Content */}
