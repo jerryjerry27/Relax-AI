@@ -1,33 +1,5 @@
-const { app, BrowserWindow } = require('electron')
-const path = require('path')
+import './style.css'
 
-function createWindow () {
-  const win = new BrowserWindow({
-    width: 1200,
-    height: 800,
-    webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false
-    },
-    titleBarStyle: 'hiddenInset',
-    backgroundColor: '#0D0208'
-  })
-
-  win.loadFile('index.html')
-}
-
-app.whenReady().then(() => {
-  createWindow()
-
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) {
-      createWindow()
-    }
-  })
-})
-
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
-})
+document.querySelector('#enter-btn').addEventListener('click', () => {
+  alert('Access Granted. Neural Interface Loading...');
+});
